@@ -124,9 +124,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.suvera.scim2-sdk</groupId>
+            <groupId>com.github.axel-springer-kugawana.scim2-sdk</groupId>
             <artifactId>scim2-sdk-client</artifactId>
-            <version>4094f3b</version>
+            <version>efc73cb</version>
         </dependency>
 
     </dependencies>
