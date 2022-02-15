@@ -1,8 +1,8 @@
-package dev.suvera.keycloak.scim2.storage.storage;
+package dev.axelspringerkugawana.keycloak.scim2.storage.storage;
 
-import dev.suvera.keycloak.scim2.storage.jpa.SkssJobQueue;
-import dev.suvera.scim2.schema.data.user.UserRecord;
-import dev.suvera.scim2.schema.ex.ScimException;
+import dev.axelspringerkugawana.keycloak.scim2.storage.jpa.SkssJobQueue;
+import dev.axelspringerkugawana.scim2.schema.data.user.UserRecord;
+import dev.axelspringerkugawana.scim2.schema.ex.ScimException;
 import org.jboss.logging.Logger;
 import org.keycloak.component.ComponentModel;
 import org.keycloak.connections.jpa.JpaConnectionProvider;

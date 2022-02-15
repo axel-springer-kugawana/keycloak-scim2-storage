@@ -1,4 +1,4 @@
-package dev.suvera.keycloak.scim2.storage.ex;
+package dev.axelspringerkugawana.keycloak.scim2.storage.ex;
 
 /**
  * author: suvera

@@ -10,7 +10,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>dev.suvera.keycloak</groupId>
+    <groupId>dev.axelspringerkugawana.keycloak</groupId>
     <artifactId>scim2-storage</artifactId>
     <version>11.0.2</version>
     <packaging>jar</packaging>
@@ -120,13 +120,13 @@
         <dependency>
             <groupId>com.github.suvera.scim2-sdk</groupId>
             <artifactId>scim2-sdk-schema</artifactId>
-            <version>8a73bc6</version>
+            <version>b7291fe5d6</version>
         </dependency>
 
         <dependency>
-            <groupId>com.github.axel-springer-kugawana.scim2-sdk</groupId>
+            <groupId>com.github.suvera.scim2-sdk</groupId>
             <artifactId>scim2-sdk-client</artifactId>
-            <version>efc73cb</version>
+            <version>b7291fe5d6</version>
         </dependency>
 
     </dependencies>

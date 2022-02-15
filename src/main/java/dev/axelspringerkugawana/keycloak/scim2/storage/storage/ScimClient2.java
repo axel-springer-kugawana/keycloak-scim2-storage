@@ -1,14 +1,14 @@
-package dev.suvera.keycloak.scim2.storage.storage;
+package dev.axelspringerkugawana.keycloak.scim2.storage.storage;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.ImmutableSet;
-import dev.suvera.scim2.client.Scim2Client;
-import dev.suvera.scim2.client.Scim2ClientBuilder;
-import dev.suvera.scim2.schema.ScimConstant;
-import dev.suvera.scim2.schema.data.group.GroupRecord;
-import dev.suvera.scim2.schema.data.user.UserRecord;
-import dev.suvera.scim2.schema.ex.ScimException;
+import dev.axelspringerkugawana.scim2.client.Scim2Client;
+import dev.axelspringerkugawana.scim2.client.Scim2ClientBuilder;
+import dev.axelspringerkugawana.scim2.schema.ScimConstant;
+import dev.axelspringerkugawana.scim2.schema.data.group.GroupRecord;
+import dev.axelspringerkugawana.scim2.schema.data.user.UserRecord;
+import dev.axelspringerkugawana.scim2.schema.ex.ScimException;
 import org.apache.commons.lang3.StringUtils;
 import org.jboss.logging.Logger;
 import org.keycloak.component.ComponentModel;

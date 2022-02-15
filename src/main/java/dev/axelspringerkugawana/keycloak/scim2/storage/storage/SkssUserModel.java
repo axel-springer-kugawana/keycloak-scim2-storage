@@ -1,6 +1,6 @@
-package dev.suvera.keycloak.scim2.storage.storage;
+package dev.axelspringerkugawana.keycloak.scim2.storage.storage;
 
-import dev.suvera.scim2.schema.data.user.UserRecord;
+import dev.axelspringerkugawana.scim2.schema.data.user.UserRecord;
 import org.keycloak.component.ComponentModel;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.RealmModel;

@@ -1,4 +1,4 @@
-package dev.suvera.keycloak.scim2.storage.jpa;
+package dev.axelspringerkugawana.keycloak.scim2.storage.jpa;
 
 import lombok.Data;
 import lombok.ToString;

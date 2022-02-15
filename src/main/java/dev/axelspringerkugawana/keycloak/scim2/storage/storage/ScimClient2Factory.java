@@ -1,6 +1,6 @@
-package dev.suvera.keycloak.scim2.storage.storage;
+package dev.axelspringerkugawana.keycloak.scim2.storage.storage;
 
-import dev.suvera.scim2.schema.ex.ScimException;
+import dev.axelspringerkugawana.scim2.schema.ex.ScimException;
 import org.keycloak.component.ComponentModel;
 
 import java.util.Map;

@@ -1,6 +1,6 @@
-package dev.suvera.keycloak.scim2.storage.storage;
+package dev.axelspringerkugawana.keycloak.scim2.storage.storage;
 
-import dev.suvera.keycloak.scim2.storage.jpa.SkssJobQueue;
+import dev.axelspringerkugawana.keycloak.scim2.storage.jpa.SkssJobQueue;
 import org.jboss.logging.Logger;
 import org.keycloak.common.util.MultivaluedHashMap;
 import org.keycloak.component.ComponentModel;
