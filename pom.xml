@@ -120,13 +120,13 @@
         <dependency>
             <groupId>com.github.axel-springer-kugawana.scim2-sdk</groupId>
             <artifactId>scim2-sdk-schema</artifactId>
-            <version>bedd960</version>
+            <version>1492a4e</version>
         </dependency>
 
         <dependency>
             <groupId>com.github.axel-springer-kugawana.scim2-sdk</groupId>
             <artifactId>scim2-sdk-client</artifactId>
-            <version>bedd960</version>
+            <version>1492a4e</version>
         </dependency>
 
     </dependencies>
