@@ -80,7 +80,6 @@ public class Scim2SyncJob implements Runnable {
     }
 
     private RealmModel getRealmModel(String realmId) {
-        log.info("realm " + realmId);
         String sql = "select u from RealmEntity u where u.name = :realmId";
 
         RealmEntity realm = em.createQuery(sql, RealmEntity.class)
