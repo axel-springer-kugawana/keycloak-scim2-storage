@@ -3,6 +3,7 @@ package dev.axelspringerkugawana.keycloak.scim2.storage.storage;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.ImmutableSet;
+
 import dev.axelspringerkugawana.scim2.client.Scim2Client;
 import dev.axelspringerkugawana.scim2.client.Scim2ClientBuilder;
 import dev.axelspringerkugawana.scim2.schema.ScimConstant;
@@ -14,7 +15,6 @@ import org.jboss.logging.Logger;
 import org.keycloak.component.ComponentModel;
 import org.keycloak.models.GroupModel;
 import org.keycloak.models.RoleModel;
-
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -132,7 +132,7 @@ public class ScimClient2 {
         }
 
         user.setSchemas(ImmutableSet.of(ScimConstant.URN_USER));
-        user.setExternalId(userModel.getId());
+        user.setExternalId(userModel.getId().replace(":", "_"));
         user.setActive(userModel.isEnabled());
 
         List<UserRecord.UserGroup> groups = new ArrayList<>();
