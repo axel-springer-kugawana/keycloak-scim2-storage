@@ -108,7 +108,7 @@ public class SkssStorageProvider implements UserStorageProvider,
      */
     @Override
     public boolean removeUser(RealmModel realmModel, UserModel userModel) {
-        if (userModel.getFirstAttribute("skss_id_" + componentModel.getId()) != null) {
+        if (userModel.getFirstAttribute("skss_id_" + componentModel.getId().replace(":", "_")) != null) {
             return false;
         }
 
@@ -121,7 +121,7 @@ public class SkssStorageProvider implements UserStorageProvider,
         entity.setComponentId(componentModel.getId());
         entity.setUsername(userModel.getUsername());
         entity.setProcessed(0);
-        entity.setExternalId(userModel.getFirstAttribute("skss_id_" + componentModel.getId()));
+        entity.setExternalId(userModel.getFirstAttribute("skss_id_" + componentModel.getId().replace(":", "_")));
 
         em.persist(entity);
         em.flush();

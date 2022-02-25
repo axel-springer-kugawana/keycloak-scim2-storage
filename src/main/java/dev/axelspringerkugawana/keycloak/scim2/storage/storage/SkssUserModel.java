@@ -1,6 +1,8 @@
 package dev.axelspringerkugawana.keycloak.scim2.storage.storage;
 
 import dev.axelspringerkugawana.scim2.schema.data.user.UserRecord;
+
+import org.jboss.logging.Logger;
 import org.keycloak.component.ComponentModel;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.RealmModel;
@@ -18,6 +20,7 @@ import java.util.Set;
  * date: 10/15/2020 11:22 AM
  */
 public class SkssUserModel extends AbstractUserAdapterFederatedStorage {
+    private static final Logger log = Logger.getLogger(SkssUserModel.class);
     private String username;
     private UserModel localModel;
     private UserRecord userResource;
@@ -50,6 +53,7 @@ public class SkssUserModel extends AbstractUserAdapterFederatedStorage {
     }
 
     public void saveExternalUserId(String componentId, String externalId) {
+        log.info("SAVE external: skss_id_" + componentId + " :::: " + externalId);
         setSingleAttribute("skss_id_" + componentId, externalId);
         localModel.setSingleAttribute("skss_id_" + componentId, externalId);
     }
